@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+
+.clip-curve-full {
+    clip-path: polygon(0 0, 150% 0, 100% 50%, 150% 100%, 0 100%);
+  }
+  .custom-bullet {
+    display: inline-block;
+    width: 60px;
+    height: 6px;
+    border-radius: 9999px;
+    background-color: #d1d5db; /* gray-300 */
+    margin: 0 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .swiper-pagination-bullet-active.custom-bullet {
+    background-color: #4b5563; /* gray-700 */
+  }
+  

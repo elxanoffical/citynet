@@ -89,7 +89,7 @@ const Header = () => {
             className="lg:hidden flex items-center justify-center border border-gray-300 w-10 h-10 rounded-full"
             onClick={() => setMenuOpen(true)}
           >
-            <FiMenu className="text-xl" />
+            <FiMenu className="text-xl cursor-pointer" />
           </button>
         </div>
       </header>
