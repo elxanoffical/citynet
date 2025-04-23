@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import "./globals.css";
+import SubHeader from "@/components/subHeader";
 
 export const metadata = {
   title: "Citynet",
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
+        <SubHeader/>
         {children}
       </body>
     </html>

@@ -51,7 +51,7 @@ const Header = () => {
             <Image src="/LogoWeb.webp" alt="CityNet Logo" width={110} height={40} className="object-contain" />
           </div>
 
-          <div className="hidden md:flex bg-gray-100 rounded-full overflow-hidden text-sm font-semibold" ref={langRef}>
+          <div className="hidden lg:flex bg-gray-100 rounded-full overflow-hidden text-sm font-semibold" ref={langRef}>
             {["az", "en", "ru"].map((lang) => (
               <button
                 key={lang}
@@ -65,7 +65,7 @@ const Header = () => {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center gap-4 flex-wrap" ref={(el) => (buttonsRef.current[0] = el)}>
+          <div className="hidden lg:flex items-center gap-4 flex-wrap" ref={(el) => (buttonsRef.current[0] = el)}>
             <button className="flex items-center gap-2 cursor-pointer border border-gray-300 px-4 py-2 rounded-full text-sm text-gray-800 font-medium">
               <FiPhone /> *1177
             </button>
@@ -86,7 +86,7 @@ const Header = () => {
           </div>
 
           <button
-            className="md:hidden flex items-center justify-center border border-gray-300 w-10 h-10 rounded-full"
+            className="lg:hidden flex items-center justify-center border border-gray-300 w-10 h-10 rounded-full"
             onClick={() => setMenuOpen(true)}
           >
             <FiMenu className="text-xl" />
@@ -98,7 +98,7 @@ const Header = () => {
         className={`
           fixed inset-0 bg-white z-50 transform transition-transform duration-300 ease-in-out
           ${menuOpen ? "translate-x-0" : "translate-x-full"}
-          md:hidden
+          lg:hidden
         `}
       >
         <div className="flex items-center justify-between p-4 border-b">
