@@ -3,7 +3,6 @@
 import { useState } from "react";
 import PlanCard from "@/components/planCard";
 
-// Burda plan məlumatlarını birbaşa daxil edirik
 const planData = {
   all: [
     {
@@ -107,7 +106,7 @@ export default function TarifTabs() {
                   ? "text-[#a43b4c] border-[#a43b4c]"
                   : "text-gray-600 border-transparent hover:text-black"
               }`}
-            >
+            >   
               {tab.label}
             </button>
           ))}
