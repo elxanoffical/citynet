@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const PromoBanner = () => {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full">
       {/* İçindəki məzmun konteynerə alındı */}
-      <div className="container mx-auto bg-[#a43b4c] rounded-2xl text-white px-6 sm:px-10 py-10 sm:py-12 flex flex-col relative lg:flex-row items-center justify-between">
+      <div className="container mx-auto bg-[#a43b4c] overflow-hidden rounded-2xl text-white px-6 sm:px-10 py-10 sm:py-12 flex flex-col relative lg:flex-row items-center justify-between">
         {/* Sol hissə – mətn */}
         <div className="w-full lg:max-w-lg z-10 text-center lg:text-left">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
