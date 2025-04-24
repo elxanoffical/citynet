@@ -1,4 +1,5 @@
 import Carousel from "@/components/carousel";
+import CityAbout from "@/components/cityAbout";
 import CitySearch from "@/components/citySearch";
 import PromoBanner from "@/components/promoBanner";
 import TarifTabs from "@/components/traifSection";
@@ -11,6 +12,7 @@ export default function HomePage() {
       <CitySearch />
       <TarifTabs />
       <PromoBanner/>
+      <CityAbout/>
     </div>
   );
 }
